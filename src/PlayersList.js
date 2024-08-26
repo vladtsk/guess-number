@@ -18,7 +18,7 @@ export default function PlayersList({ players, onSetLeader, leader, winners }) {
 
 function Player({ player, onSetLeader, leader, winners }) {
   let result = "";
-  if (winners.includes(player.name)) result = "You win 🏆";
+  if (winners.includes(player.id)) result = "You win 🏆";
   else result = "You lose 💔";
 
   return (
